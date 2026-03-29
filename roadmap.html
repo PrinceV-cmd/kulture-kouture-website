@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<!--
+  Kulture Kouture — Roadmap page
+  Describes product vision and future plans for the brand.
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>Kulture Kouture - RoadMap</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Main navigation bar -->
+        <div class="navbar">
+            <a href="index.html">
+                <div class="logo"></div>
+            </a>
+            <button class="nav-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-navigation">
+                <i class="fa fa-bars"></i>
+            </button>
+            <nav id="primary-navigation">
+                <ul class="nav-links">
+                <li><a href="index.html">Catalog</a></li>
+                <li><a href="Collections.html">Collections</a></li>
+                <li><a href="roadmap.html">RoadMap</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Announcement ticker (CSS animation, screenreader-friendly) -->
+        <<div class="marquee" role="region" aria-label="Announcements">
+            <div class="marquee__text"><a href="events.html">Upcoming Events: Grand Opening Sale!</a></div>
+        </div>
+        <!-- Hero/header banner -->
+        <header class="header"></header>
+
+        <!-- Company roadmap section -->
+        <section class="Roadmap">
+            <h2>Roadmap</h2>
+            <p>Our ceremonial outfits are designed to make your special occasions regal, memorable, and culturally rich.
+                We enhance garments with intricate beadwork, embroidery and artistic finishes that showcase true
+                craftsmanship. Our roadmap includes expanding our product line to include more traditional attire,
+                launching an online store for global accessibility, and hosting cultural events to celebrate African
+                heritage through fashion.</p>
+        </section>
+
+        <!-- Footer with quick brand and support references -->
+        <footer>
+
+            <div class="footer">
+
+                <div>
+                    <h3>Shop</h3>
+                    <a href="index.html"><p>Catalog</p></a>
+                    <a href="Collections.html"><p>Collections</p></a>
+                    <a href="products.html"><p>Available Products</p></a>
+                </div>
+
+                <div>
+                    <h3>The Brand</h3>
+                    <a href="roadmap.html"><p>Roadmap</p></a>
+                    <a href="products.html"><p>Featured Products</p></a>
+                </div>
+
+                <div>
+                    <h3>Support</h3>
+                    <a href="contact.html"><p>Contact Us</p></a>
+                    <a href="contact.html"><p>Customer Reviews</p></a>
+                </div>
+
+            </div>
+
+            <p class="copy">2026 © Kulture Kouture</p>
+
+        </footer>
+
+    </div>
+
+    <!-- Shared script included for site-wide functionality -->
+    <script>
+        // Mobile nav toggle for all pages
+
+function toggleNav() {
+    const navLinks = document.querySelector('.nav-links');
+    const toggle = document.querySelector('.nav-toggle');
+    if (!navLinks || !toggle) return;
+    const isOpen = navLinks.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+}
+
+    const toggle = document.querySelector('.nav-toggle');
+    if (toggle) {
+        toggle.addEventListener('click', toggleNav);
+    }
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+            const navLinks = document.querySelector('.nav-links');
+            const toggle = document.querySelector('.nav-toggle');
+            if (navLinks && navLinks.classList.contains('open')) {
+                navLinks.classList.remove('open');
+                if (toggle) toggle.setAttribute('aria-expanded', 'false');
+            }
+        });
+    });
+    </script>
+    
+</body>
+</html>

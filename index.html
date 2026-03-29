@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<!--
+  Kulture Kouture — Home page
+  Displays featured categories, products, roadmap, events, and team information.
+  Loads script.js to populate the category/featured/product grids.
+-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kulture Kouture</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Main navigation bar -->
+        <div class="navbar">
+            <a href="index.html">
+                <div class="logo"></div>
+            </a>
+            <button class="nav-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-navigation">
+                <i class="fa fa-bars"></i>
+            </button>
+            <nav id="primary-navigation">
+                <ul class="nav-links">
+                <li><a href="index.html">Catalog</a></li>
+                <li><a href="Collections.html">Collections</a></li>
+                <li><a href="roadmap.html">RoadMap</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- Announcement ticker (CSS animation, screenreader-friendly) -->
+        <div class="marquee" role="region" aria-label="Announcements">
+            <div class="marquee__text"><a href="events.html">Upcoming Events: Grand Opening Sale!</a></div>
+        </div>
+        <!-- Hero/header banner -->
+        <header class="header"></header>
+        <!-- Main content area (categories, featured products, etc.) -->
+        <div class="content">
+            <div class="catalog">
+                <div class="Catalog-Image">
+                    <img src="Asset/Images/Category 1.png" alt="Catalog">
+                </div>
+                <div class="Catalog-text">
+                    <h1>Product <br> Catalog</h1>
+                    <p>Choose what's Good for you.</p>
+                    <a href="products.html"><button type="button">View Products</button></a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Categories section populated by script.js -->
+        <section>
+            <h2>Categories</h2>
+            <div id="categories" class="grid"></div>
+        </section>
+
+        <!-- Featured products section populated by script.js -->
+        <section>
+            <h2>Featured Products</h2>
+            <div id="featured" class="grid"></div>
+        </section>
+
+        <!-- All products section populated by script.js -->
+        <section>
+            <h2>Available Products</h2>
+            <div id="products" class="grid"></div>
+        </section>
+
+        <!-- Roadmap section describing brand vision -->
+        <section class="Roadmap">
+            <h2>Roadmap</h2>
+            <p>Our ceremonial outfits are designed to make your special occasions regal, memorable, and culturally rich.
+                We enhance garments with intricate beadwork, embroidery and artistic finishes that showcase true
+                craftmanship. Our expert guide you in selecting styles, fabrics and accessories that perfectly express
+                tradition and elegance.</p>
+        </section>
+
+        <section class="events">
+            <h2>Upcoming Events</h2>
+            <!-- Highlighted event preview card -->
+            <div class="event-card">
+                <img src="Asset/Images/Event 2.jpeg" alt="Grand Opening">
+                <h3>The Grand Opening!</h3>
+                <p>25th April 2026</p>
+                <p>Join us for the celebration of our first physical store.</p>
+                <p>10AM – 8PM</p>
+            </div>
+        </section>
+
+        <section class="contact">
+            <h2>Contact Us</h2>
+            <p>No 6a Allan Avenue, Ikeja, Lagos</p>
+            <p>Email: info@kulturekouture.com</p>
+            <p>Phone: +234 900 000 8765</p>
+        </section>
+
+        <section>
+            <h2>Meet Our Team</h2>
+
+            <!-- Team leadership and staff profiles -->
+            <div class="team">
+
+                <div class="ceo">
+                    <img src="Asset/Images/Vincent.jpeg" alt="Vincent">
+                    <p><b>CEO</b></p>
+                    <p>Akinsete Olafusika Vincent</p>
+                </div>
+                
+                <div class="teamA">
+
+                    <div>
+                        <img src="Asset/Images/Misfit.jpeg" alt="Misfit">
+                        <p><b>General Manager</b></p>
+                        <p>Obiuwo Trevor Oghenekaro</p>
+                    </div>
+                                       
+                    <div>
+                        <img src="Asset/Images/Estilo.jpeg" alt="Designer">
+                        <p><b>Fashion Designer</b></p>
+                        <p>Sunday Esther</p>
+                    </div>
+
+                    <div>
+                        <img src="Asset/Images/David.jpeg" alt="David">
+                        <p><b>Creative Director</b></p>
+                        <p>Omotayo-Anwo David</p>
+                    </div>
+                </div>
+                <div class="teamB">
+                    <div>
+                        <img src="Asset/Images/Ishola.PNG" alt="Ishola">
+                        <p><b>Sales Manager</b></p>
+                        <p>Ishola Johnson</p>
+                    </div>
+
+                    <div>
+                        <img src="Asset/Images/Alex.PNG" alt="Alex">
+                        <p><b>Quality Control</b></p>
+                        <p>Alex Goodness Omeiza</p>
+                    </div>
+
+                    <div>
+                        <img src="Asset/Images/Kay.jpeg" alt="Esther">
+                        <p><b>Marketing Manager</b></p>
+                        <p>Joan Okafor</p>
+                    </div> 
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="reviews">
+            <div class="customerReview">
+
+                <!-- Review text block -->
+                <div class="review">
+                    <h2>Customer Reviews</h2>
+
+                    <p><b>Wesley Adam</b></p>
+                    <p>Very great products and services.</p>
+
+                    <p><b>Brian Kendra</b></p>
+                    <p>Beautiful cultural designs and fast delivery.</p>
+
+                    <p><b>Douglas Aviel</b></p>
+                    <p>Beautiful cultural designs and fast delivery.</p>
+
+                    <p><b>Daniel Ben</b></p>
+                    <p>Beautiful cultural designs and fast delivery.</p>
+                </div>
+                
+                <!-- Supporting image for the reviews section -->
+                <div class="reviewImage">
+                    <img src="Asset/Images/Category 1.png" alt="Wesley">
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer with quick brand and support references -->
+        <footer>
+
+            <div class="footer">
+
+                <div>
+                    <h3>Shop</h3>
+                    <a href="index.html"><p>Catalog</p></a>
+                    <a href="Collections.html"><p>Collections</p></a>
+                    <a href="products.html"><p>Available Products</p></a>
+                </div>
+
+                <div>
+                    <h3>The Brand</h3>
+                    <a href="roadmap.html"><p>Roadmap</p></a>
+                    <a href="products.html"><p>Featured Products</p></a>
+                </div>
+
+                <div>
+                    <h3>Support</h3>
+                    <a href="contact.html"><p>Contact Us</p></a>
+                    <a href="contact.html"><p>Customer Reviews</p></a>
+                </div>
+
+            </div>
+
+            <p class="copy">2026 © Kulture Kouture</p>
+
+        </footer>
+
+    </div>
+
+    <!-- Shared homepage script that fills the category and product grids -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

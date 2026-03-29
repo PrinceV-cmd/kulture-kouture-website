@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!--
+  Kulture Kouture — Products page
+  Displays the full product catalog (populated by products.js).
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>Kulture Kouture - Products</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Main navigation bar -->
+        <div class="navbar">
+            <a href="index.html">
+                <div class="logo"></div>
+            </a>
+            <button class="nav-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-navigation">
+                <i class="fa fa-bars"></i>
+            </button>
+            <nav id="primary-navigation">
+                <ul class="nav-links">
+                <li><a href="index.html">Catalog</a></li>
+                <li><a href="Collections.html">Collections</a></li>
+                <li><a href="roadmap.html">RoadMap</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- Announcement ticker (CSS animation, screenreader-friendly) -->
+        <div class="marquee" role="region" aria-label="Announcements">
+            <div class="marquee__text"><a href="events.html">Upcoming Events: Grand Opening Sale!</a></div>
+        </div>
+        <!-- Hero/header banner -->
+        <header class="header"></header>
+    
+        <!-- Product listing populated by products.js -->
+        <section>
+            <h2>Available Products</h2>
+            <div id="products" class="grid"></div>
+        </section>
+
+        <!-- Footer with quick brand and support references -->
+        <footer>
+
+            <div class="footer">
+
+                <div>
+                    <h3>Shop</h3>
+                    <a href="index.html"><p>Catalog</p></a>
+                    <a href="Collections.html"><p>Collections</p></a>
+                    <a href="products.html"><p>Available Products</p></a>
+                </div>
+
+                <div>
+                    <h3>The Brand</h3>
+                    <a href="roadmap.html"><p>Roadmap</p></a>
+                    <a href="products.html"><p>Featured Products</p></a>
+                </div>
+
+                <div>
+                    <h3>Support</h3>
+                    <a href="contact.html"><p>Contact Us</p></a>
+                    <a href="contact.html"><p>Customer Reviews</p></a>
+                </div>
+
+            </div>
+
+            <p class="copy">2026 © Kulture Kouture</p>
+
+        </footer>
+
+    </div>
+
+    <!-- Dedicated script for rendering the full products catalog -->
+    <script src="products.js"></script>
+</body>
+</html>
